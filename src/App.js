@@ -1,5 +1,6 @@
 import React,{Component} from 'react';
 import Productlogo from './assets/op.png';
+import SweetAlert from 'sweetalert';
 import logo from './op.png';
 import './App.css';
 var emails=[]
@@ -16,6 +17,7 @@ class App extends Component{
   onSubmit = ()=>{
     emails.push(this.state.email);
     this.setState({email:''})
+    SweetAlert("Thanks","We got You","Success");
   }
   render(){
     return (
@@ -65,6 +67,7 @@ log off on demand</p>
             <h1 id="form-h1"><p>We'll be here with our product Ninja Shutdown in some days.<br />Enter Your Email to get more info.  </p></h1>
             <input type="email" name="email" id="email" placeholder="Enter your Email" onChange={this.onSearchChange} required />
             <input type="submit" id="submit" value="Submit" onClick={this.onSubmit}  />
+            
           </div>
         </section>
         <footer className="footer">
