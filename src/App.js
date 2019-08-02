@@ -16,7 +16,6 @@ class App extends Component{
   onSubmit = ()=>{
     emails.push(this.state.email);
     this.setState({email:''})
-    console.log(emails);
   }
   render(){
     return (
@@ -36,7 +35,7 @@ class App extends Component{
         </header>
         <div className="product">
           <div className="product-heading">
-            <img className="product-image" src={Productlogo} height="140px" />
+            <img className="product-image" src={Productlogo} alt="" height="140px" />
             <h1> R.T.G. Ninja Shutdown</h1>
           </div>
           <p style={{"color":"white","fontWeight":"bold"}}>A simple to use application which allows you to easily schedule<br /> the computer shutdown
@@ -62,12 +61,21 @@ log off on demand</p>
           </section>
         </div>
         <section id="contact">
-          <form id="form">
+          <div id="form">
             <h1 id="form-h1"><p>We'll be here with our product Ninja Shutdown in some days.<br />Enter Your Email to get more info.  </p></h1>
             <input type="email" name="email" id="email" placeholder="Enter your Email" onChange={this.onSearchChange} required />
             <input type="submit" id="submit" value="Submit" onClick={this.onSubmit}  />
-          </form>
+          </div>
         </section>
+        <footer className="footer">
+          Get In Touch<br />
+
+          Just Give Us A Miss Call On +(91)-889-5193-795 And
+          We Will We Their To Help You Just Anytime You Need .<br />
+          Or Mail Us To support@rtgstudios.in<br />
+          <span><br />COPYRIGHT R.T.G STUDIOS All Rights Reserved</span>
+        </footer>
+
       </div>
     ); 
   }

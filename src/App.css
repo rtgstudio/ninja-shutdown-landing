@@ -95,7 +95,7 @@ html,body {
 }
 .about-list{
   color: white;
-  margin: 2px 40px; 
+  margin: 2px 62px; 
   font-weight: bold;
 }
 .product-image{
@@ -103,6 +103,13 @@ html,body {
 }
 .product-heading{
   display: inline-block;
+}
+.footer{
+  height: 150px;
+  background-color:black;
+  opacity: .7;
+  color: white;
+  font-weight: bold;
 }
 @keyframes App-logo-spin {
   from {
