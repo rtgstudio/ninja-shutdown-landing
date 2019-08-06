@@ -1,10 +1,12 @@
-@import 'https://fonts.googleapis.com/css?family=Open+Sans';
+@import "https://fonts.googleapis.com/css?family=Open+Sans";
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
+html{
+  background-color: #f3f3f3;
+}
 body {
   font-family: "Open Sans", "Trebuchet MS", Helvetica, sans-serif;
   text-align: center;
@@ -12,38 +14,23 @@ body {
   background: #f3f3f3;
 }
 
-#header {
-  display: flex;
-  align-items: center;
-  position: fixed;
-  top: 0;
-  padding-top: 5px;
-  margin-bottom: 200px;
-  width: 100%;
-  background-color: #eee;
-  justify-content: space-around;
+.header {
+  color: white;
+  max-width: 1500px;
+  margin: 0 auto;
 }
-#company-name{
+
+#company-name {
   font-size: 1.7em;
   color: #333;
   display: flex;
   white-space: nowrap;
   font-weight: bold;
-
 }
 #nav-bar {
   display: flex;
 }
 
-.ul-container {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  width: 30vw;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
 #form {
   display: flex;
   flex-flow: column wrap;
@@ -65,8 +52,8 @@ body {
   border-radius: 4px;
 }
 
-#submit {
-  background-color: #FF6565;
+.submit {
+  background-color: #ff6565;
   border-radius: 4px;
   color: white;
   font-size: 1em;
@@ -77,10 +64,10 @@ body {
   cursor: pointer;
 }
 
-#submit:hover {
+.submit:hover {
   background-color: #5a1f70;
-  box-shadow: 0 8px 48px 0 rgba(0, 0, 0, 0.30);
-  transition: background-color 1s, box-shadow 1s;
+  box-shadow: 0 8px 48px 0 rgba(0, 0, 0, 0.3);
+  transition: background-color 0.2s, box-shadow 0.6s;
 }
 
 .nav-link {
@@ -93,17 +80,16 @@ body {
   width: 100%;
   margin: 70px auto;
 }
-.product-image{
+.product-image {
   margin-top: 120px;
 }
-.footer{
+.footer {
   height: auto;
-  background-color:black;
+  background-color: black;
   color: white;
-  opacity: .9;
+  opacity: 0.9;
   font-weight: bold;
   margin-top: 100px;
-}
-.footer-page{
-  
+  padding-bottom: 50px;
+  padding-top: 15px;
 }
