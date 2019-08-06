@@ -22,3 +22,10 @@
 .detail{
 	padding: 10px;
 }
+@media only screen and (max-width: 768px) {
+   .cardList{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

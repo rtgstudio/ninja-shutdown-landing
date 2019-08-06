@@ -32,7 +32,7 @@ class App extends Component{
             <img className="product-image" src={Productlogo} alt="" height="140px" />
             <h1> R.T.G. Ninja Shutdown</h1>
           </div>
-          <p style={{"color":"white","fontWeight":"bold"}}>A simple to use application which allows you to easily schedule<br /> the computer shutdown
+          <p style={{"color":"black","fontWeight":"bold"}}>A simple to use application which allows you to easily schedule<br /> the computer shutdown
             but also trigger the system reboot or
             log off on demand.
           </p>
